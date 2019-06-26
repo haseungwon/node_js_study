@@ -8,12 +8,12 @@ http.createServer( function (request, response) {
    // URL 뒤에 있는 디렉토리/파일이름 파싱
    var pathname = url.parse(request.url).pathname;
    
-   
+   console.log(pathname);
    console.log("Request for " + pathname + " received.");
    
    // 파일 이름이 비어있다면 index.html 로 설정
    if(pathname=="/"){
-       pathname = "/index.html";
+       pathname = "/views/index.html";
    }
    
    // 파일을 읽기
@@ -54,7 +54,7 @@ var http = require('http');
 var options = {
    host: 'localhost',
    port: '8081',
-   path: '/index.html'  
+   path: '/views/index.html'  
 };
 
 // 콜백 함수로 Response를 받아온다
