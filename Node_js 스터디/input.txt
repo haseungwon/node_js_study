@@ -1,0 +1,32 @@
+
+Node.js에 대하여...
+
+Node는 웹서버가 아니랍니다. Node 자체로는 아무것도 하지 않습니다 – 아파치 웹서버처럼 HTML 파일 경로를 지정해주고 서버를 열고 그런 설정이 없습니다. 단, HTTP 서버를 직접 작성해야합니다 (일부 라이브러리의 도움을 받으면서). Node.js 는 그저 코드를 실행할 수 있는 하나의 방법에 불과한 그저 JavasScript 런타임일 뿐입니다.
+
+Node.js 의 특징
+1. 비동기 I/O 처리 / 이벤트 위주
+2. 빠른 속도
+3. 단일 쓰레드 / 뛰어난 확장성
+4. 라이센스
+
+Node.js 를 어디에 쓸까?
+1. 입출력이 잦은 어플리케이션
+2. 데이터 스트리밍 어플리케이션
+3. 데이터를 실시간으로 다루는 어플리케이션
+4. JSON API 기반 어플리케이션
+5. 싱글페이지 어플리케이션
+
+설치 방법
+1. https://nodejs.org/ko/에 가서 12.4.0 현재 버전 다운
+2. cmd 창을 열어서 원하는 파일에 접근
+    2-1. cmd 창에서 파일 접근 방법 cd 를 누르고 파일 경로를 쓴다.
+3. node.js가 설치 되어있는지 확인하는 방법은 node -v를 눌러서 버전이 나오는 지 확인한다.
+4. npm init를 눌러서 처음에 패키지 이름을 쓰고 그 외는 그냥 엔터키를 누른다. 
+5. 마지막에 yes 누루면 json확장자 패키지를 다운 받게 된다.
+
+Node js 공부순서 basic
+construct_sever_tast -> call_back_function -> event_loop -> HTTP_Module_1 
+
+
+Node js 공부 순서 Express
+express 프레임어크 사용 -> EJS -> RESTful API -> Express-session -> Express+ Mongoose->MongoDB -> RESTful API
