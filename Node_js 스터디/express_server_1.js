@@ -33,7 +33,8 @@ app.set('views', __dirname + '/views');
 
 
 //서버가 HTML 렌더링을 할 때, EJS 엔진을 사용하도록 설정합니다.
-//Calling app.set('foo', true) for a Boolean property is the same as calling app.enable('foo'). Similarly, calling app.set('foo', false) for a Boolean property is the same as calling app.disable('foo').
+/*Calling app.set('foo', true) for a Boolean property is the same as calling app.enable('foo'). Similarly, calling app.set('foo', false) for a Boolean property is the same as calling app.disable('foo').*/
+
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
